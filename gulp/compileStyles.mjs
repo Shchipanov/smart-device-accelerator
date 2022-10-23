@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-import plumber from 'gulp-plumber';
+// import plumber from 'gulp-plumber';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import postcss from 'gulp-postcss';
@@ -12,8 +12,7 @@ const sass = gulpSass(dartSass);
 
 const compileStyles = () =>
   gulp.src('source/sass/style.scss', {sourcemaps: true})
-      .pipe(plumber())
-      .pipe(sass())
+      .pipe(sass().on('error', sass.logError))
       .pipe(postcss([autoprefixer({
         grid: true,
       })]))

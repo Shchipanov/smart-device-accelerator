@@ -1,0 +1,29 @@
+.user-list {
+  min-width: 160px;
+  margin-right: 0;
+  padding-left: 0;
+
+  a {
+    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-alice-blue;
+    padding: 10px 15px;
+    border: 1px solid $color-alice-blue;
+    border-radius: 3px;
+  }
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.user-list__item {
+  padding-left: 0;
+  min-width: 160px;
+}
