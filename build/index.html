@@ -12,52 +12,40 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="main-header container">
-        <div class="main-header__container">
-          <a class="main-header__logo header-logo" href="#">
-            <div class="header-logo__wrapper">
-                <img class="header-logo__image" src="img/header-images/smart-device-logo.svg" width="55" height="55" alt="Логотип компании Smart Device.">
-                <div class="header-logo__wrapper-image">
-                  <span class="header-logo__name">Smart Device</span>
-                  <span class="header-logo__description">умные технологии</span>
-                </div>
-            </div>
+      <header class="main-header">
+        <div class="main-header__container container">
+          <a class="main-header__logo" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/header-images/smart-device-logo.webp 1x, img/header-images/smart-device-logo@2x.webp 2x">
+              <img class="main-header__image " src="img/header-images/smart-device-logo.png" srcset="img/header-images/smart-device-logo@2x.png 2x" width="215" height="55" alt="Логотип компании Smart Device.">
+            </picture>
           </a>
           <nav class="main-nav">
             <ul class="main-nav__list contact-list">
               <li class="main-nav__item email">
+                <svg aria-hidden="true" focusable="false" width="20" height="20">
+                  <use href="./img/sprite_auto.svg#email"></use>
+                </svg>
                 <a href="mailto:info@sd.ru">
-                  <span>
-                    info@sd.ru
-                  </span>
-                  <svg aria-hidden="true" focusable="false" width="20" height="20">
-                    <use href="./img/sprite_auto.svg#email"></use>
-                  </svg>
+                  info@sd.ru
                 </a>
               </li>
               <li class="main-nav__item phone">
+                <svg aria-hidden="true" focusable="false" width="20" height="20">
+                  <use href="./img/sprite_auto.svg#phone"></use>
+                </svg>
                 <a href="tel:+74950005252">
-                  <span>
-                    +7 (495) 000 52 52
-                  </span>
-                  <svg aria-hidden="true" focusable="false" width="20" height="20">
-                    <use href="./img/sprite_auto.svg#phone"></use>
-                  </svg>
+                  +7 (495) 000 52 52
                 </a>
               </li>
             </ul>
-            <ul class="main-nav__list user-list">
-              <li class="main-nav__item user-list__item">
-                <a href="#">
-                  <svg aria-hidden="true" focusable="false" width="16" height="16">
-                    <use href="./img/sprite.svg#icon-user"></use>
-                  </svg><span class="user-list__span">Заказать звонок</span>
-                </a>
-            </ul>
+            <a class="main-nav__link" href="#">
+              Заказать звонок
+            </a>
           </nav>
         </div>
       </header>
-      <main class="main-container container">
+      <main class="main-container">
         <h1 class="visually-hidden">
           Компания "Smart Device"
         </h1>
@@ -264,7 +252,7 @@
                 <li>
                   <a href="#">
                     <div class="social__pinterest">
-                      <svg aria-hidden="true" focusable="false" width="30" height="30">
+                      <svg aria-hidden="true" focusable="false" width="20" height="20">
                         <use href="./img/sprite_auto.svg#pinterest"></use>
                       </svg>
                     </div>

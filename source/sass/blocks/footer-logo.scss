@@ -50,6 +50,7 @@
   padding-top: 3%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 
   @include vp-767 {
     display: none;

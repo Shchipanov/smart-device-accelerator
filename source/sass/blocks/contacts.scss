@@ -1,0 +1,38 @@
+.contacts__wrapper {
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin-top: 10px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    font-family: "pt-mono", "Arial", monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-tints-shalimar;
+  }
+}

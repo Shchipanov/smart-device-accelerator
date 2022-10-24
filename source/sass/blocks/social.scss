@@ -8,18 +8,26 @@
     height: 4px;
     background-color: $color-tints-alice-blue;
     border-radius: 50px;
+    top: 9px;
+    left: 13px;
   }
 
 }
 
 .social__pinterest {
   position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
+  content: "";
     width: 30px;
     height: 30px;
-    color: $color-tints-alice-blue;
+    background-color: $color-tints-alice-blue;
+    border-radius: 50px;
+
+  svg {
+    position: absolute;
+    z-index: 2;
+    background-color: aliceblue;
+    border-radius: 50px;
+    left: 5px;
+    top: 5px;
   }
 }
