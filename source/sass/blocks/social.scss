@@ -1,0 +1,25 @@
+.social__ok {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: $color-tints-alice-blue;
+    border-radius: 50px;
+  }
+
+}
+
+.social__pinterest {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    color: $color-tints-alice-blue;
+  }
+}

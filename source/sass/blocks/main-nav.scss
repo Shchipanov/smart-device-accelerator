@@ -1,5 +1,5 @@
 .main-nav {
-  min-width: 797px;
+  min-width: 785px;
   display: flex;
   justify-content: space-between;
 
@@ -48,6 +48,7 @@
     position: absolute;
     left: 10px;
     top: 3px;
+    background-color: $color-black-pearl;
   }
 
   @include vp-1023 {
