@@ -1,18 +1,26 @@
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1260px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @include vp-1023 {
-    max-width: 1023px;
+    // justify-content: space-between;
+    // min-width: 768px;
+    // max-width: 1023px;
+    // min-height: 100px;
+    // padding-right: 9%;
+    // padding-left: 6%;
+    padding: 0 50px;
   }
-
   @include vp-767 {
-    max-width: 768px;
-  }
-
-  @include vp-374 {
-    max-width: 320px;
+    // min-width: 320px;
+    // max-width: 767px;
+    // min-height: 70px;
+    // padding-right: 11%;
+    // padding-bottom: 2vh;
+    // padding-left: 8%;
+    padding: 0 25px;
   }
 
   // @include vp-1023 {
@@ -27,4 +35,3 @@
   //   padding: 0 16px;
   // }
 }
-
