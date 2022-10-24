@@ -78,4 +78,8 @@
   border-radius: 3px;
   display: inline-block;
   width: 160px;
+
+  @include vp-1023 {
+    
+  }
 }
