@@ -435,7 +435,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "pt-mono", "Arial", sans-serif;
+  font-family: "pt-mono", "Arial", monospace;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -869,10 +869,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   padding-top: 50px;
-  padding-bottom: 67px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  padding-bottom: 47px;
 }
 
 .main-footer__logo {
@@ -886,6 +883,10 @@ button,
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.main-footer__top {
+  margin-right: 32vh;
 }
 
 .main-footer__top ul {
@@ -917,6 +918,71 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 5px;
+}
+
+.main-footer__scroll details {
+  display: block;
+}
+
+.main-footer__scroll summary::-webkit-details-marker {
+  display: none;
+}
+
+.main-footer__scroll summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+.main-footer__scroll summary::marker {
+  display: none;
+}
+
+.main-footer__scroll summary {
+  display: inline-block;
+  cursor: pointer;
+  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.main-footer__scroll ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-footer__scroll a {
+  font-family: "pt-mono", "Arial", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+.main-footer__scroll div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-footer__scroll div li {
+  max-width: 220px;
+  margin-right: 30px;
+}
+
+.main-footer__scroll li {
+  margin-top: 6px;
+}
+
+.main-footer__scroll li:first-of-type {
+  margin-top: 0;
 }
 
 .social__ok,
@@ -959,45 +1025,8 @@ button,
   top: 0;
 }
 
-.scroll__wrapper h3 {
-  margin: 0;
-  padding: 0;
-  font-family: "roboto-condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.scroll__wrapper ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  margin-right: 30px;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-}
-
-.scroll__wrapper li {
-  margin-top: 10px;
-}
-
-.scroll__wrapper li:first-of-type {
-  margin-top: 0;
-}
-
-.scroll__wrapper a {
-  font-family: "pt-mono", "Arial", monospace;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: rgba(255, 255, 255, 0.7019607843);
+.link__container {
+  margin-right: 96px;
 }
 
 .contacts__wrapper h3 {
