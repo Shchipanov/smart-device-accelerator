@@ -879,7 +879,7 @@ button,
   display: block;
   width: 215px;
   height: 55px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .main-footer__image {
@@ -895,9 +895,18 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   max-width: 150px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 9px;
+}
+
+.main-footer__top li {
+  max-height: 30px;
 }
 
 .main-footer__top svg {
@@ -908,6 +917,13 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.social__ok,
+.social__pinterest {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .social__ok {
@@ -939,8 +955,8 @@ button,
   z-index: 2;
   background-color: aliceblue;
   border-radius: 50px;
-  left: 5px;
-  top: 5px;
+  left: 0;
+  top: 0;
 }
 
 .scroll__wrapper h3 {

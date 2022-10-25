@@ -1,3 +1,9 @@
+.social__ok,
+.social__pinterest {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
 .social__ok {
   position: relative;
 
@@ -27,7 +33,7 @@
     z-index: 2;
     background-color: aliceblue;
     border-radius: 50px;
-    left: 5px;
-    top: 5px;
+    left: 0;
+    top: 0;
   }
 }
