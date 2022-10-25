@@ -15,16 +15,7 @@
 <body>
   <div class="wrapper">
     <header class="main-header">
-      <!-- Убираем обвертку main-header__container, логотип переносим в nav и класс contianer переносим на тег nav-->
-      <!-- <div class="main-header__container container"> -->
-      <!-- <a class="main-header__logo" href="#">
-            <picture>
-              <source type="image/webp" srcset="img/header-images/smart-device-logo.webp 1x, img/header-images/smart-device-logo@2x.webp 2x">
-              <img class="main-header__image " src="img/header-images/smart-device-logo.png" srcset="img/header-images/smart-device-logo@2x.png 2x" width="215" height="55" alt="Логотип компании Smart Device.">
-            </picture>
-          </a> -->
       <nav class="main-nav container">
-        <!-- На главной странице ссылка-логотип пишется без href, а на внутренних страницах ссылка ведет на index.html -->
         <a class="main-nav__logo">
           <picture>
             <source type="image/svg+xml" media="(max-width: 767px)" srcset="img/svg/smart-device-logo-mobile.svg">
@@ -33,10 +24,6 @@
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <!-- Иконка должны быть частью ссылки -->
-            <!-- <svg aria-hidden="true" focusable="false" width="20" height="20">
-              <use href="./img/sprite_auto.svg#email"></use>
-            </svg> -->
             <a class="main-nav__link" href="mailto:info@sd.ru">
               <svg aria-hidden="true" focusable="false" width="20" height="20">
                 <use href="./img/sprite_auto.svg#email"></use>
@@ -45,9 +32,6 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <!-- <svg aria-hidden="true" focusable="false" width="20" height="20">
-              <use href="./img/sprite_auto.svg#phone"></use>
-            </svg> -->
             <a class="main-nav__link" href="tel:+74950005252">
               <svg aria-hidden="true" focusable="false" width="20" height="20">
                 <use href="./img/sprite_auto.svg#phone"></use>
@@ -58,26 +42,28 @@
         </ul>
         <a class="btn btn--transparent main-nav__btn" href="#">Заказать звонок</a>
       </nav>
-      <!-- </div> -->
     </header>
-    <main class="main-container container">
+    <main class="main-container">
       <h1 class="visually-hidden">
         Компания "Smart Device"
       </h1>
       <section class="main-container__block">
-        <picture>
+        <div class="main-container__block-container container">
+          <h2>
+            Печатные платы
+          </h2>
+          <p>
+            производство и монтаж, поставка комплектующих, блоков и модулей
+          </p>
+          <a class="main-container__link" href="#">
+            Получить бесплатную консультацию
+          </a>
+        </div>
+        <!-- <picture>
           <source type="image/webp" srcset="img/main-container-images/main-container-image.webp 1x, img/main-container-images/main-container-image@2x.webp 2x">
           <img src="img/main-container-images/main-container-image.jpg" srcset="img/main-container-images/main-container-image@2x.jpg 2x" alt="Внешний вид печатной платы." width="1920" height="880">
-        </picture>
-        <h2>
-          Печатные платы
-        </h2>
-        <p>
-          производство и монтаж, поставка комплектующих, блоков и модулей
-        </p>
-        <a class="main-container__link" href="#">
-          Получить бесплатную консультацию
-        </a>
+        </picture> -->
+
       </section>
       <section class="features">
         <h2 class="visually-hidden">
