@@ -12,6 +12,11 @@
     padding-top: 50px;
     padding-bottom: 63px;
   }
+
+  @include vp-767 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 
 .main-footer__logo {
@@ -22,6 +27,10 @@
 
   @include vp-1023 {
     margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    margin-bottom: 14px;
   }
 }
 
@@ -41,6 +50,24 @@
     margin-bottom: 35px;
   }
 
+  @include vp-767 {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 26px;
+    position: relative;
+    padding-right: 5px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: $color-tints-shalimar-line;
+      bottom: 0;
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -56,6 +83,13 @@
       width: 150px;
       margin-right: -5px;
       margin-top: 2px;
+     }
+
+     @include vp-767 {
+      margin-right: 0;
+      margin-top: 0;
+      margin-left: 8px;
+      padding: 5px;
      }
   }
 
@@ -74,10 +108,34 @@
 
   @include vp-1023 {
     padding-top: 0;
+    justify-content: space-between;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
   }
 
   details {
     display:block;
+
+    @include vp-767 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100vw;
+        height: 1px;
+        background-color: $color-tints-shalimar-line;
+        bottom: 0;
+        left: -25px;
+      }
+    }
+  }
+
+  details[open] > summary:before {
+    @include vp-767 {
+      transform: rotate(0deg);
+    }
   }
 
   summary::-webkit-details-marker{display:none;}
@@ -93,14 +151,51 @@
     line-height: 16px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: $color-white;
+    color: $color-default-white;
     margin-bottom: 20px;
+
+    @include vp-767 {
+      padding-top: 22px;
+      padding-bottom: 22px;
+      margin-bottom: 0;
+      position: relative;
+      width: 100%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        background-color: $color-tints-alice-blue;
+        right: 0;
+        top: 50%;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        background-color: $color-tints-alice-blue;
+        right: 0;
+        top: 50%;
+        transform: rotate(90deg);
+      }
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+    }
   }
 
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @include vp-767 {
+      margin-top: -6px;
+    }
   }
 
   a {
@@ -110,6 +205,10 @@
     font-size: 16px;
     line-height: 135%;
     color: $color-tints-shalimar;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
   }
 
   div {
@@ -138,7 +237,13 @@
 
       &:last-of-type {
         margin-bottom: 0;
-        }
+      }
+    }
+
+    @include vp-767 {
+      &:last-of-type {
+        padding-bottom: 18px;
+      }
     }
   }
 }

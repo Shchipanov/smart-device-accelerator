@@ -2,6 +2,16 @@
   margin-right: 96px;
 
   @include vp-1023 {
-    margin-right: 100px;
+    margin-right: 0;
+  }
+}
+
+.link__container + details {
+  @include vp-1023 {
+    margin-right: 13px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
   }
 }
