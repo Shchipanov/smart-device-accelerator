@@ -1,21 +1,18 @@
-let paragraphDiv = document.querySelector('.about__wrapper-content');
-
-let element = document.createElement('p');
-
-let elementText = document.createTextNode('Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.');
+const openParagraph = document.querySelector('.about__paragraph');
 
 const aboutButton = document.querySelector('.about__btn');
 
-const addText = () => {
-  aboutButton.addEventListener('submit', () => {
-    // console.log('click');
-    element.appendChild(elementText);
+const addText = aboutButton.addEventListener('click', function () {
 
-    paragraphDiv.appendChild(element);
-
+  if (openParagraph.classList.contains('about__paragraph')) {
+    openParagraph.classList.remove('about__paragraph');
+    openParagraph.classList.add('about__paragraph--open');
     aboutButton.textContent = 'Свернуть';
-  });
-
-};
+  } else {
+    openParagraph.classList.remove('about__paragraph--open');
+    openParagraph.classList.add('about__paragraph');
+    aboutButton.textContent = 'Подробнее';
+  }
+});
 
 export {addText};

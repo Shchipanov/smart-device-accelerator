@@ -85,3 +85,11 @@
     }
   }
 }
+
+.about__paragraph {
+  display: none;
+}
+
+.about__paragraph--open {
+  display: block;
+}

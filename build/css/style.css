@@ -1248,6 +1248,14 @@ button,
   margin-bottom: 42px;
 }
 
+.about__paragraph {
+  display: none;
+}
+
+.about__paragraph--open {
+  display: block;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
