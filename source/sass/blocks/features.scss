@@ -1,0 +1,130 @@
+.features__container {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 30px;
+    padding-top: 10%;
+    padding-bottom: 2px;
+
+    @include vp-1023 {
+      padding-top: 76px;
+    }
+
+    @include vp-767 {
+      display: block;
+      grid-template-columns: none;
+      padding-top: 49px;
+    }
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-family: $ff-roboto-condensed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: $color-deep-sky-blue;
+    margin-bottom: 15px;
+
+    @include vp-1023 {
+     margin-bottom: 7px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+    }
+  }
+
+  .features__wrapper {
+    min-height: 300px;
+    border: 1px solid $color-whisper;
+    outline: 1px;
+    box-sizing: border-box;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 100%;
+      background-color: $color-deep-sky-blue;
+    }
+
+    @include vp-1023 {
+      min-height: 360px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 31px;
+      min-height: 340px;
+    }
+  }
+
+
+  li {
+    padding: 38px 45px 66px;
+    box-sizing: border-box;
+
+    @include vp-1023 {
+      padding: 41px 43px 31px;
+    }
+
+    @include vp-767 {
+      padding: 29px 29px 31px;
+    }
+  }
+
+  svg {
+    fill: $color-deep-sky-blue;
+    background-color: $color-default-white;
+    margin-bottom: 14px;
+
+    @include vp-1023 {
+      margin-bottom: 10px;
+    }
+
+    @include vp-767 {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-family: $ff-ptmono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: $color-black-pearl;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+  }
+}
+
+.features__wrapper--active {
+  background-color: $color-deep-sky-blue;
+
+  svg {
+    fill: $color-alice-blue;
+    background-color: $color-deep-sky-blue;
+  }
+
+  h3 {
+    color: $color-alice-blue;
+  }
+
+  p{
+    color: $color-alice-blue;
+  }
+}

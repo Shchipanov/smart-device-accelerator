@@ -877,14 +877,13 @@ button,
   background-image: url("../img/background/main-container-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 880px;
-  z-index: -1;
 }
 
 .main-container__wrapper {
   display: inline-block;
   margin-top: 25%;
   margin-left: 10%;
+  padding-bottom: 295px;
 }
 
 .main-container__wrapper span {
@@ -1109,6 +1108,88 @@ button,
   margin-right: 96px;
 }
 
+.features__container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 30px;
+  padding-top: 10%;
+  padding-bottom: 2px;
+}
+
+.features__container h3 {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #00b2ff;
+  margin-bottom: 15px;
+}
+
+.features__container .features__wrapper {
+  min-height: 300px;
+  border: 1px solid #ebebeb;
+  outline: 1px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.features__container .features__wrapper::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #00b2ff;
+}
+
+.features__container li {
+  padding: 38px 45px 66px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.features__container svg {
+  fill: #00b2ff;
+  background-color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.features__container p {
+  padding: 0;
+  margin: 0;
+  font-family: "pt-mono", "Arial", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #041827;
+}
+
+.features__wrapper--active {
+  background-color: #00b2ff;
+}
+
+.features__wrapper--active svg {
+  fill: #f2f5f7;
+  background-color: #00b2ff;
+}
+
+.features__wrapper--active h3 {
+  color: #f2f5f7;
+}
+
+.features__wrapper--active p {
+  color: #f2f5f7;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1187,12 +1268,12 @@ button,
 
   .main-container__block {
     background-image: url("../img/background/main-container-image-tablet.jpg");
-    height: 640px;
   }
 
   .main-container__wrapper {
     margin-left: 0;
     margin-top: 27%;
+    padding-bottom: 33%;
   }
 
   .main-container__wrapper h2 {
@@ -1269,12 +1350,31 @@ button,
   .link__container + details {
     margin-right: 13px;
   }
+
+  .features__container ul {
+    padding-top: 76px;
+  }
+
+  .features__container h3 {
+    margin-bottom: 7px;
+  }
+
+  .features__container .features__wrapper {
+    min-height: 360px;
+  }
+
+  .features__container li {
+    padding: 41px 43px 31px;
+  }
+
+  .features__container svg {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .main-container__block {
     background-image: url("../img/background/main-container-image-tablet@2x.jpg");
-    background-size: 768px auto;
   }
 }
 
@@ -1313,11 +1413,11 @@ button,
 
   .main-container__block {
     background-image: url("../img/background/main-container-image-mobile.jpg");
-    height: 560px;
   }
 
   .main-container__wrapper {
     margin-top: 56%;
+    padding-bottom: 46%;
   }
 
   .main-container__wrapper span {
@@ -1464,19 +1564,40 @@ button,
   .link__container + details {
     margin-right: 0;
   }
+
+  .features__container ul {
+    display: block;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    padding-top: 49px;
+  }
+
+  .features__container h3 {
+    font-size: 20px;
+  }
+
+  .features__container .features__wrapper {
+    margin-bottom: 31px;
+    min-height: 340px;
+  }
+
+  .features__container li {
+    padding: 29px 29px 31px;
+  }
+
+  .features__container svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .features__container p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .main-container__block {
     background-image: url("../img/background/main-container-image-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
-}
-
-@media (max-width: 374px) {
-  .container {
-    padding: 0 16px;
-    max-width: 320px;
   }
 }
 
@@ -1489,6 +1610,5 @@ button,
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .main-container__block {
     background-image: url("../img/background/main-container-image@2x.jpg");
-    background-size: 1920px auto;
   }
 }
