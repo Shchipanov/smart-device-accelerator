@@ -96,6 +96,17 @@
   }
 }
 
+// .link__container[open] summary ~ * {
+//   @include vp-767 {
+//     animation: sweep 0.5s ease-in-out;
+//   }
+// }
+
+// @keyframes sweep {
+//   0%    {opacity: 0;}
+//   100%  {opacity: 1;}
+// }
+
 .link__container ul {
   margin: 0;
   padding: 0;
