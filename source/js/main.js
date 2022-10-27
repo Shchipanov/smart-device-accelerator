@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {addText} from './modules/modals/adding-text';
 import {accordion} from './modules/modals/accordion';
-
+import {viewportСhange} from './modules/modals/details';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     addText();
     accordion();
+    viewportСhange();
   });
 });
 
