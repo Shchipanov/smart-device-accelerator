@@ -15,7 +15,7 @@ function accordion() {
     }
   }
 
-  // Вешаем наблюдатель на все елементы <details> внутри акордиона
+  // Вешаем наблюдатель на все елементы <details> внутри акордеона
   document.querySelectorAll('.link > details').forEach((el) => el.addEventListener('toggle', onToggle));
 }
 

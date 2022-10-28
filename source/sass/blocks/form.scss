@@ -274,7 +274,7 @@
   border: 1px solid $color-default-white;
   border-radius: 2px;
   top: 7px;
-  left: 0px;
+  left: 0;
 
   &:hover {
     background-color: $color-silver;
@@ -290,8 +290,7 @@
   }
 }
 
-.form__checkbox-input[type="checkbox"]:checked:active
-  + .form__control-mark::before {
+.form__checkbox-input[type="checkbox"]:checked:active + .form__control-mark::before {
   background-color: $color-silver;
 }
 

@@ -5,7 +5,7 @@ const detailsTwo = document.querySelector('.link__container-lost');
 
 function viewportСhange() {
 
-  // Выполняем действие, если ширина больше 768px
+  // Выполняем действие, если ширина больше 767px
   let viewport = window.innerWidth;
   if (viewport > 767) {
     detailsOne.open = true;
