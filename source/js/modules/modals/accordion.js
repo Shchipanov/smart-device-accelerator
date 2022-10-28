@@ -1,32 +1,41 @@
-let details = document.querySelectorAll('.link__container');
+function accordion() {
 
-// eslint-disable-next-line no-undef
-for (i = 0; i < details.length; i++) {
-  // eslint-disable-next-line no-undef
-  details[i].addEventListener('toggle', accordion);
-}
+  // var details = document.querySelectorAll("details");
+  // for (i = 0; i < details.length; i++) {
+  //   details[i].addEventListener("toggle", accordion);
+  // }
+  // function accordion(event) {
+  //   if (!event.target.open) return;
+  //   var details = event.target.parentNode.children;
+  //   for (i = 0; i < details.length; i++) {
+  //     if (
+  //       details[i].tagName != "DETAILS" ||
+  //       !details[i].hasAttribute("open") ||
+  //       event.target == details[i]
+  //     ) {
+  //       continue;
+  //     }
+  //     details[i].removeAttribute("open");
+  //   }
+  // }
 
-function accordion(evt) {
-  if (!evt.target.open) {
-    return;
-  }
-  // eslint-disable-next-line no-shadow
-  details = evt.target.parentNode.children;
-  // eslint-disable-next-line no-undef
-  for (i = 0; i < details.length; i++) {
-    if (
-      // eslint-disable-next-line no-undef, eqeqeq
-      details[i].tagName != 'DETAILS' ||
-      // eslint-disable-next-line no-undef
-      !details[i].hasAttribute('open') ||
-      // eslint-disable-next-line eqeqeq, no-undef
-      evt.target == details[i]
-    ) {
-      continue;
+  function onToggle(event) {
+
+    if (event.target.open) {
+      document.querySelectorAll('.link > details[open]').forEach((el) => {
+        // Исключаем из перебора елемент который мы только что открыли
+        if (el === event.target) {
+          return;
+        }
+
+        // Закрываем все остальные елементы <details>
+        el.open = false;
+      });
     }
-    // eslint-disable-next-line no-undef
-    details[i].removeAttribute('open');
   }
+
+  // Вешаем наблюдатель на все елементы <details> внутри акордиона
+  document.querySelectorAll('.link > details').forEach((el) => el.addEventListener('toggle', onToggle));
 }
 
 export {accordion};
