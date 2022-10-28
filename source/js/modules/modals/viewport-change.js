@@ -1,18 +1,20 @@
-// const detailsOne = document.querySelector('.link__container');
-// const detailsTwo = document.querySelector('.link__container-lost');
+import {accordion} from './accordion';
 
-// function viewportСhange() {
+const detailsOne = document.querySelector('.link__container');
+const detailsTwo = document.querySelector('.link__container-lost');
 
-//   // Выполняем действие, если ширина больше 768px
-//   let viewport = window.innerWidth;
-//   if (viewport > 768) {
-//     detailsOne.open = false;
-//     detailsTwo.open = true;
-//   }
-//   window.addEventListener('resize', function () {
-//     detailsOne.open = false;
-//     viewportСhange();
-//   });
-// }
+function viewportСhange() {
 
-// export {viewportСhange};
+  // Выполняем действие, если ширина больше 768px
+  let viewport = window.innerWidth;
+  if (viewport > 767) {
+    detailsOne.open = true;
+    detailsTwo.open = true;
+  } else {
+    detailsOne.open = false;
+    detailsTwo.open = true;
+    accordion();
+  }
+}
+
+export {viewportСhange};
