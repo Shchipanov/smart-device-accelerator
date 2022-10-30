@@ -144,16 +144,16 @@
         <div class="form__container container">
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <img class="form__image" src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" alt="бумашный самолетик." width="510" height="285">
-          <form action="https://echo.htmlacademy.ru">
+          <form method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" autocomplete="off">
             <div class="form__wrapper">
               <h3>Остались вопросы? Задайте их нам!</h3>
               <p>Мы проконсультируем Вас бесплатно</p>
               <div class="form__input">
                 <label for="name">
-                  <input type="text" name="yourself-name" placeholder="Имя" id="name" required>
+                  <input type="text" name="autofocus" placeholder="Имя" id="name" required>
                 </label>
                 <label for="phone">
-                  <input type="tel" id="phone" name="yourself-phone" placeholder="Телефон" required>
+                  <input type="tel" id="phone" name="yourself-phone" placeholder="Телефон" data-phone required>
                 </label>
               </div>
               <label>
@@ -162,7 +162,7 @@
               <div class="form__question">
                 <button class="btn form__btn" type="submit">Задать вопрос</button>
                   <label class="form__checkbox" for="agreement">
-                    <input class="visually-hidden form__checkbox-input" type="checkbox" id="agreement" name="agreement" checked required>
+                    <input class="visually-hidden form__checkbox-input" type="checkbox" id="agreement" name="agreement" required>
                     <span class="form__control-mark"></span>
                     <span class="form__control-span">Я согласен на обработку персональных данных</span>
                   </label>
@@ -237,7 +237,7 @@
               </ul>
             </div>
           </details>
-          <details class="link__container link__container-lost" open>
+          <details class="link__container link__container-lost"  open>
             <summary>Наш офис</summary>
             <ul>
               <li>
@@ -264,7 +264,7 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <form action="https://echo.htmlacademy.ru">
+        <form method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" autocomplete="off">
           <div class="modal__wrapper-form">
             <h3>Закажите звонок</h3>
             <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
@@ -273,7 +273,7 @@
                 <input type="text" name="yourself-name" placeholder="Имя" id="your-name" required>
               </label>
               <label for="your-phone">
-                <input type="tel" id="your-phone" name="yourself-phone" placeholder="Телефон" required>
+                <input type="tel" id="your-phone" name="yourself-phone" data-phone placeholder="Телефон" required>
               </label>
             </div>
             <label>
@@ -282,7 +282,7 @@
             <div class="modal__question">
               <button class="btn modal__btn" type="submit">отправить</button>
               <label class="modal__checkbox" for="your-agreement">
-                <input class="visually-hidden modal__checkbox-input" type="checkbox" id="your-agreement" name="agreement" checked required>
+                <input class="visually-hidden modal__checkbox-input" type="checkbox" id="your-agreement" name="agreement" required>
                 <span class="modal__control-mark"></span>
                 <span class="modal__control-span">Я согласен на обработку персональных данных</span>
               </label>

@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {addText} from './modules/modals/adding-text';
-import {viewportСhange} from './modules/modals/viewport-change';
+import {addText} from './modules/adding-text';
+import {viewportСhange} from './modules/viewport-change';
+import {getMaskPhone} from './modules/mask-phone';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     addText();
     viewportСhange();
+    getMaskPhone();
   });
 
   window.addEventListener('resize', function () {
