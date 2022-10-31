@@ -1,7 +1,7 @@
 import {accordion} from './accordion';
 
-const detailsOne = document.querySelector('.link__container');
-const detailsTwo = document.querySelector('.link__container-lost');
+const detailsOne = document.querySelector('[data-details="first"]');
+const detailsTwo = document.querySelector('[data-details="second"]');
 
 function viewportСhange() {
 

@@ -1,6 +1,6 @@
-const openParagraph = document.querySelector('.about__paragraph');
+const openParagraph = document.querySelector('[data-about="paragraph"]');
 
-const aboutButton = document.querySelector('.about__btn');
+const aboutButton = document.querySelector('[data-about="btn"]');
 
 function addText() {
   aboutButton.addEventListener('click', function () {
