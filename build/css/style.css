@@ -437,6 +437,7 @@ html {
   line-height: 24px;
   font-family: "pt-mono", "Arial", monospace;
   color: #000000;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1123,10 +1124,6 @@ button,
 .main-nav__btn:focus {
   background-color: #00b2ff;
   outline: none;
-}
-
-.main-container {
-  scroll-behavior: smooth;
 }
 
 .main-container__background {
@@ -2516,7 +2513,8 @@ button,
   }
 
   .form__input input {
-    max-width: 270px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .form__wrapper textarea {

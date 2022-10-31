@@ -120,7 +120,8 @@
   }
 
   @include vp-767 {
-    max-width: 270px;
+    width: 100%;
+    max-width: 100%;
   }
 
   &::placeholder {
