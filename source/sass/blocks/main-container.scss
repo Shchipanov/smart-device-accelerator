@@ -110,6 +110,19 @@
   padding: 15px 25px;
   margin-left: 4px;
 
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+
+  &:focus {
+    background-color: transparent;
+    outline: none;
+  }
+
   @include vp-1023 {
     margin-left: 46px;
   }

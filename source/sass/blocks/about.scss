@@ -35,6 +35,22 @@
   border: 1px solid #00b2ff;
   border-radius: 3px;
 
+  &:hover {
+    background-color: $color-deep-sky-blue;
+    color: $color-black-pearl;
+  }
+
+  &:active {
+    background-color: $color-tints-shalimar;
+    color: $color-black-pearl;
+  }
+
+  &:focus {
+    background-color: $color-deep-sky-blue;
+    outline: none;
+    color: $color-black-pearl;
+  }
+
   @include vp-1023 {
     padding: 13px 50px 13px;
   }

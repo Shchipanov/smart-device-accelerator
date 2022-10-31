@@ -105,6 +105,25 @@
       height: 40px;
     }
   }
+
+  &:hover {
+    &::after {
+      background-color: transparent;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: transparent;
+    }
+  }
+
+  &:focus {
+    &::after {
+      background-color: transparent;
+      outline: none;
+    }
+  }
 }
 
 .product__item-1 {

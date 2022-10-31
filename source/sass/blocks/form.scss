@@ -243,6 +243,11 @@
     background-color: $color-tints-shalimar;
     color: $color-black-pearl;
   }
+
+  &:focus {
+    background-color: transparent;
+    outline: none;
+  }
 }
 
 .form__control-span {
