@@ -1,4 +1,5 @@
 function getMaskPhone() {
+
   [].forEach.call(document.querySelectorAll('[data-phone]'), function (input) {
     let keyCode;
     function mask(event) {
