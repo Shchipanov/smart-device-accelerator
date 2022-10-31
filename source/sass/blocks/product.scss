@@ -132,14 +132,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/product-image-1@2x.jpg");
+  @media (min-width: $vp-1024) {
+    @include retina {
+      background-image: url("../img/background/product-image-1@2x.jpg");
+    }
   }
 
   @include vp-1023 {
     background-image: url("../img/background/product-image-1-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/background/product-image-1-tablet@2x.jpg");
     }
   }
@@ -147,7 +149,7 @@
   @include vp-767 {
     background-image: url("../img/background/product-image-1-mobile.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/background/product-image-1-mobile@2x.jpg");
     }
   }
@@ -159,14 +161,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/product-image-2@2x.jpg");
+  @media (min-width: $vp-1024) {
+    @include retina {
+      background-image: url("../img/background/product-image-2@2x.jpg");
+    }
   }
 
   @include vp-1023 {
     background-image: url("../img/background/product-image-2-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/background/product-image-2-tablet@2x.jpg");
     }
   }
@@ -174,7 +178,7 @@
   @include vp-767 {
     background-image: url("../img/background/product-image-2-mobile.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/background/product-image-2-mobile@2x.jpg");
     }
   }
@@ -186,14 +190,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/product-image-3@2x.jpg");
+  @media (min-width: $vp-1024) {
+    @include retina {
+      background-image: url("../img/background/product-image-3@2x.jpg");
+    }
   }
 
   @include vp-1023 {
     background-image: url("../img/background/product-image-3-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/background/product-image-3-tablet@2x.jpg");
     }
   }
@@ -201,7 +207,7 @@
   @include vp-767 {
     background-image: url("../img/background/product-image-3-mobile.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/background/product-image-3-mobile@2x.jpg");
     }
   }

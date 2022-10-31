@@ -1,5 +1,4 @@
 function getMaskPhone() {
-
   [].forEach.call(document.querySelectorAll('[data-phone]'), function (input) {
     let keyCode;
     function mask(event) {
@@ -38,10 +37,8 @@ function getMaskPhone() {
           })
           .replace(/[+()]/g, '\\$&');
       reg = new RegExp('^' + reg + '$');
-      if (
-
-        // eslint-disable-next-line no-invalid-this
-        !reg.test(this.value) ||
+      // eslint-disable-next-line no-invalid-this
+      if (!reg.test(this.value) ||
 
         // eslint-disable-next-line no-invalid-this
         this.value.length < 5 ||

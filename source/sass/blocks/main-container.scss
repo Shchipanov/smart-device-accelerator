@@ -16,14 +16,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/main-container-image@2x.jpg");
+  @media (min-width: $vp-1024) {
+    @include retina {
+      background-image: url("../img/background/main-container-image@2x.jpg");
+    }
   }
 
   @include vp-1023 {
     background-image: url("../img/background/main-container-image-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/background/main-container-image-tablet@2x.jpg");
     }
   }
@@ -31,7 +33,7 @@
   @include vp-767 {
     background-image: url("../img/background/main-container-image-mobile.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @include retina {
       background-image: url("../img/background/main-container-image-mobile@2x.jpg");
     }
   }

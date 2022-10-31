@@ -1919,6 +1919,24 @@ button,
   }
 */
 
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  .main-container__block {
+    background-image: url("../img/background/main-container-image@2x.jpg");
+  }
+
+  .product__item-1 {
+    background-image: url("../img/background/product-image-1@2x.jpg");
+  }
+
+  .product__item-2 {
+    background-image: url("../img/background/product-image-2@2x.jpg");
+  }
+
+  .product__item-3 {
+    background-image: url("../img/background/product-image-3@2x.jpg");
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 50px;
@@ -2164,7 +2182,7 @@ button,
   }
 }
 
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .main-container__block {
     background-image: url("../img/background/main-container-image-tablet@2x.jpg");
   }
@@ -2525,7 +2543,7 @@ button,
   }
 }
 
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .main-container__block {
     background-image: url("../img/background/main-container-image-mobile@2x.jpg");
   }
@@ -2546,23 +2564,5 @@ button,
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .main-container__block {
-    background-image: url("../img/background/main-container-image@2x.jpg");
-  }
-
-  .product__item-1 {
-    background-image: url("../img/background/product-image-1@2x.jpg");
-  }
-
-  .product__item-2 {
-    background-image: url("../img/background/product-image-2@2x.jpg");
-  }
-
-  .product__item-3 {
-    background-image: url("../img/background/product-image-3@2x.jpg");
   }
 }
