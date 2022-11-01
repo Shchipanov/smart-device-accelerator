@@ -162,15 +162,17 @@
 
   &:hover {
     background-color: $color-deep-sky-blue;
+    outline: 1px solid $color-black-pearl;
   }
 
   &:active {
     background-color: $color-deep-sky-blue;
+    outline: 1px solid $color-black-pearl;
   }
 
   &:focus-visible {
     background-color: $color-deep-sky-blue;
-    outline: none;
+    outline: 1px solid $color-black-pearl;
   }
 }
 
@@ -193,15 +195,17 @@
 
   &:hover {
     background-color: $color-deep-sky-blue;
+    outline: 1px solid $color-black-pearl;
   }
 
   &:active {
     background-color: $color-deep-sky-blue;
+    outline: 1px solid $color-black-pearl;
   }
 
   &:focus-visible {
     background-color: $color-deep-sky-blue;
-    outline: none;
+    outline: 1px solid $color-black-pearl;
   }
 }
 
@@ -220,11 +224,18 @@
 
   &:hover {
     background-color: transparent;
+    border: 1px solid $color-black-pearl;
   }
 
   &:active {
     background-color: $color-tints-shalimar;
     color: $color-black-pearl;
+    border: 1px solid $color-black-pearl;
+  }
+
+  &:focus {
+    background-color: transparent;
+    outline: 1px solid $color-black-pearl;
   }
 }
 

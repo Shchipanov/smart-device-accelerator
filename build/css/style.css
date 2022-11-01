@@ -880,15 +880,17 @@ button,
 
 .modal__input input:hover {
   background-color: #00b2ff;
+  outline: 1px solid #041827;
 }
 
 .modal__input input:active {
   background-color: #00b2ff;
+  outline: 1px solid #041827;
 }
 
 .modal__input input:focus-visible {
   background-color: #00b2ff;
-  outline: none;
+  outline: 1px solid #041827;
 }
 
 .modal__wrapper-form textarea {
@@ -947,15 +949,17 @@ button,
 
 .modal__wrapper-form textarea:hover {
   background-color: #00b2ff;
+  outline: 1px solid #041827;
 }
 
 .modal__wrapper-form textarea:active {
   background-color: #00b2ff;
+  outline: 1px solid #041827;
 }
 
 .modal__wrapper-form textarea:focus-visible {
   background-color: #00b2ff;
-  outline: none;
+  outline: 1px solid #041827;
 }
 
 .modal__checkbox {
@@ -974,11 +978,18 @@ button,
 
 .modal__btn:hover {
   background-color: transparent;
+  border: 1px solid #041827;
 }
 
 .modal__btn:active {
   background-color: rgba(255, 255, 255, 0.7);
   color: #041827;
+  border: 1px solid #041827;
+}
+
+.modal__btn:focus {
+  background-color: transparent;
+  outline: 1px solid #041827;
 }
 
 .modal__control-span {
@@ -1789,12 +1800,12 @@ button,
 
 .form__input input:hover {
   background-color: #00b2ff;
-  border: 1px solid #041827;
+  outline: 1px solid #041827;
 }
 
 .form__input input:active {
   background-color: #00b2ff;
-  border: 1px solid #041827;
+  outline: 1px solid #041827;
 }
 
 .form__input input:focus-visible {
@@ -1858,12 +1869,12 @@ button,
 
 .form__wrapper textarea:hover {
   background-color: #00b2ff;
-  border: 1px solid #041827;
+  outline: 1px solid #041827;
 }
 
 .form__wrapper textarea:active {
   background-color: #00b2ff;
-  border: 1px solid #041827;
+  outline: 1px solid #041827;
 }
 
 .form__wrapper textarea:focus-visible {
