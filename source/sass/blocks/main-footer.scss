@@ -20,9 +20,6 @@
 }
 
 .main-footer__logo {
-  display: block;
-  width: 215px;
-  height: 55px;
   margin-bottom: 32px;
 
   @include vp-1023 {
@@ -31,6 +28,19 @@
 
   @include vp-767 {
     margin-bottom: 10px;
+  }
+
+   &:hover {
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:active {
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:focus {
+    background-color: $color-deep-sky-blue;
+    outline: none;
   }
 }
 
@@ -64,7 +74,8 @@
       position: absolute;
       bottom: 0;
 
-      width: 100vw;
+      left: -272px;
+      right: -272px;
       height: 1px;
 
       background-color: $color-tints-shalimar-line;

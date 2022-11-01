@@ -25,4 +25,21 @@
   height: 40px;
 
   border-radius: 50%;
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:active {
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:focus {
+    background-color: $color-deep-sky-blue;
+    outline: none;
+  }
+}
+
+.social__link:active svg {
+  fill: $color-silver;
 }

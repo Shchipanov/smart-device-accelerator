@@ -66,6 +66,23 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.product__item {
+  position: relative;
+  background-color: $color-silver;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $color-image-background;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
 .product__item a {
   position: relative;
 
@@ -73,7 +90,7 @@
   width: 100%;
   min-height: 650px;
   padding: 48px 40px 20px;
-
+  vertical-align: middle;
   color: $color-default-white;
 
   @include vp-1023 {
@@ -99,6 +116,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 3px 0 0 0;
+    border: 1px solid $color-deep-sky-blue-background;
 
     @include vp-767 {
       width: 40px;
@@ -107,18 +125,24 @@
   }
 
   &:hover {
+    outline: 1px solid $color-deep-sky-blue-background;
+
     &::after {
       background-color: transparent;
     }
   }
 
   &:active {
+    outline: 1px solid $color-deep-sky-blue-background;
+
     &::after {
       background-color: transparent;
     }
   }
 
   &:focus {
+    outline: 1px solid $color-deep-sky-blue-background;
+
     &::after {
       background-color: transparent;
       outline: none;
@@ -128,9 +152,6 @@
 
 .product__item-1 {
   background-image: url("../img/background/product-image-1.jpg");
-  background-color: $color-silver;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @media (min-width: $vp-1024) {
     @include retina {
@@ -231,17 +252,11 @@
 }
 
 .product__item-2 h3 {
-  br {
-    display: none;
-  }
-
   @include vp-1023 {
-    br {
-      display: block;
-    }
+    width: 145px;
   }
-}
 
-.product__background {
-  background-color: $color-image-background;
+  @include vp-767 {
+    width: 130px;
+  }
 }

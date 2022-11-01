@@ -17,7 +17,7 @@
   <div class="wrapper">
     <header class="main-header">
       <nav class="main-nav container">
-        <a class="main-nav__logo">
+        <a class="logo main-nav__logo">
           <picture>
             <source type="image/svg+xml" media="(max-width: 767px)" srcset="img/svg/smart-device-logo-mobile.svg">
             <img class="main-nav__image" src="img/svg/smart-device-logo.svg" width="215" height="55" alt="Логотип компании Smart Device.">
@@ -25,17 +25,17 @@
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="mailto:info@sd.ru">
+            <a class="main-nav__link" href="mailto:info@sd.ru" type="text/html">
               <svg aria-hidden="true" focusable="false" width="20" height="20">
-                <use href="./img/sprite_auto.svg#email"></use>
+                <use href="/img/sprite_auto.svg#email"></use>
               </svg>
               info@sd.ru
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="tel:+74950005252">
+            <a class="main-nav__link" href="tel:+74950005252" type="text/html">
               <svg aria-hidden="true" focusable="false" width="20" height="20">
-                <use href="./img/sprite_auto.svg#phone"></use>
+                <use href="/img/sprite_auto.svg#phone"></use>
               </svg>
               +7 (495) 000 52 52
             </a>
@@ -52,8 +52,10 @@
             <div class="main-container__wrapper">
               <h2>Печатные платы</h2>
               <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a href="#scroll" class="btn main-container__block__btn" type="button">Получить бесплатную консультацию</a>
-              <a href="#scroll" class="btn main-container__block__btn-mobile" type="button">бесплатная консультация</a>
+              <a href="#scroll" type="text/html" class="btn main-container__btn">
+                <span class="main-container__btn-main">Получить бесплатную консультацию</span>
+                <span class="main-container__btn-mobile">бесплатная консультация</span>
+              </a>
             </div>
           </div>
         </div>
@@ -64,28 +66,28 @@
           <ul class="features__list">
             <li class="features__item">
               <svg aria-hidden="true" focusable="false" width="35" height="35">
-                <use href="./img/sprite_auto.svg#stopwatch"></use>
+                <use href="/img/sprite_auto.svg#stopwatch"></use>
               </svg>
               <h3>Оперативные сроки</h3>
               <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
             </li>
             <li class="features__item features__item-row-2">
               <svg aria-hidden="true" focusable="false" width="35" height="35">
-                <use href="./img/sprite_auto.svg#hired"></use>
+                <use href="/img/sprite_auto.svg#hired"></use>
               </svg>
               <h3>Крупные поставщики</h3>
               <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
             </li>
             <li class="features__item features__item-row-3">
               <svg aria-hidden="true" focusable="false" width="35" height="35">
-                <use href="./img/sprite_auto.svg#detective"></use>
+                <use href="/img/sprite_auto.svg#detective"></use>
               </svg>
               <h3>Полная конфиденциальность</h3>
               <p>По желанию клиента мы обеспечиваем полную конфиденциальность.</p>
             </li>
             <li class="features__item features__item-row-4">
               <svg aria-hidden="true" focusable="false" width="35" height="35">
-                <use href="./img/sprite_auto.svg#tag"></use>
+                <use href="/img/sprite_auto.svg#tag"></use>
               </svg>
               <h3>Персонализация стоимости</h3>
               <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
@@ -95,7 +97,10 @@
       </section>
       <section class="about">
         <div class="about__container container">
-          <img class="about__image" src="img/about-image.png" srcset="img/about-image@2x.png 2x" alt="текущий 2022 год." width="150" height="320">
+          <picture>
+            <source type="image/webp" srcset="img/about-image.webp, img/about-image@2x.webp 2x">
+            <img class="about__image" src="img/about-image.png" srcset="img/about-image@2x.png 2x" alt="текущий 2022 год." width="150" height="320">
+          </picture>
           <div class="about__wrapper">
             <div class="about__wrapper-content">
               <h2>О компании</h2>
@@ -113,29 +118,22 @@
       <section class="product">
         <div class="product__container container">
           <h2 class="product__title-1">Smart Device предлагает следующие товары и услуги</h2>
-          <h2 class="product__title-2">Товары и услуги
-          Smart Device</h2>
+          <h2 class="product__title-2">Товары и услуги Smart Device</h2>
           <ul class="product__list">
             <li class="product__item product__item-1">
-              <div class="product__background">
-                <a href="#">
-                  <h3>Производство печатных плат</h3>
-                </a>
-              </div>
+              <a href="#">
+                <h3>Производство печатных плат</h3>
+              </a>
             </li>
             <li class="product__item product__item-2">
-              <div class="product__background">
-                <a href="#">
-                  <h3>Монтаж<br> печатных плат</h3>
-                </a>
-              </div>
+              <a href="#" type="text/html">
+                <h3>Монтаж печатных плат</h3>
+              </a>
             </li>
             <li class="product__item product__item-3">
-              <div class="product__background">
-                <a href="#">
-                  <h3>Комплектующие для светотехники</h3>
-                </a>
-              </div>
+              <a href="#" type="text/html">
+                <h3>Комплектующие для светотехники</h3>
+              </a>
             </li>
           </ul>
         </div>
@@ -143,7 +141,10 @@
       <section class="form" id="scroll">
         <div class="form__container container">
           <h2 class="visually-hidden">Форма обратной связи</h2>
-          <img class="form__image" src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" alt="бумашный самолетик." width="510" height="285">
+          <picture>
+            <source type="image/webp" srcset="img/paper-airplane.webp, img/paper-airplane@2x.webp 2x">
+            <img class="form__image" src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" alt="бумашный самолетик." width="510" height="285">
+          </picture>
           <form method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" autocomplete="off">
             <div class="form__wrapper">
               <h3>Остались вопросы? Задайте их нам!</h3>
@@ -175,64 +176,64 @@
     <footer class="main-footer">
       <div class="main-footer__container container">
         <div class="main-footer__top">
-          <a class="main-footer__logo">
+          <a class="logo main-footer__logo">
             <img class="main-footer__image" src="img/svg/smart-device-logo.svg" width="215" height="55" alt="Логотип компании Smart Device.">
           </a>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" type="text/html">
                 <svg aria-hidden="true" focusable="false" width="30" height="30">
-                  <use href="./img/sprite_auto.svg#ok"></use>
+                  <use href="/img/sprite_auto.svg#ok"></use>
+                </svg>
+                <span class="visually-hidden">Однокласники.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" type="text/html">
+                <svg aria-hidden="true" focusable="false" width="30" height="30">
+                  <use href="/img/sprite_auto.svg#vk"></use>
                 </svg>
                 <span class="visually-hidden">Вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" type="text/html">
                 <svg aria-hidden="true" focusable="false" width="30" height="30">
-                  <use href="./img/sprite_auto.svg#vk"></use>
+                  <use href="/img/sprite_auto.svg#pinterest"></use>
                 </svg>
-                <span class="visually-hidden">Вконтакте.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <svg aria-hidden="true" focusable="false" width="30" height="30">
-                  <use href="./img/sprite_auto.svg#pinterest"></use>
-                </svg>
-                <span class="visually-hidden">Вконтакте.</span>
+                <span class="visually-hidden">Пинтерест.</span>
               </a>
             </li>
           </ul>
         </div>
         <section class="main-footer__scroll link" data-link>
-          <h2 class="visually-hidden">Список подвала</h2>
+          <h2 class="visually-hidden">Навигация по сайту</h2>
           <details class="link__container" data-details="first" open>
             <summary>Разделы сайта</summary>
             <div class="link__wrapper">
               <ul>
                 <li>
-                  <a href="#">О Компании</a>
+                  <a href="#" type="text/html">О Компании</a>
                 </li>
                 <li>
-                  <a href="#">Продукты</a>
+                  <a href="#" type="text/html">Продукты</a>
                 </li>
                 <li>
-                  <a href="#">Производство печатных плат</a>
+                  <a href="#" type="text/html">Производство печатных плат</a>
                 </li>
                 <li>
-                  <a href="#">Монтаж печатных плат</a>
+                  <a href="#" type="text/html">Монтаж печатных плат</a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="#">Комплектующие</a>
+                  <a href="#" type="text/html">Комплектующие</a>
                 </li>
                 <li>
-                  <a href="#">Доставка</a>
+                  <a href="#" type="text/html">Доставка</a>
                 </li>
                 <li>
-                  <a href="#">Контакты</a>
+                  <a href="#" type="text/html">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -241,16 +242,16 @@
             <summary>Наш офис</summary>
             <ul>
               <li>
-                <a href="#">г. Мытищи, Олимпийский проспект,<br> д.10</a>
+                <a href="#" type="text/html">г. Мытищи, Олимпийский проспект,<br> д.10</a>
               </li>
               <li>
-                <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                <a href="tel:+74955894050" type="text/html">+7 (495) 589-40-50</a>
               </li>
               <li>
-                <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+                <a href="tel:+79253895829" type="text/html">+7 (925) 389-58-29</a>
               </li>
               <li>
-                <a href="tel:+79253647813">+7 (925) 364-78-13</a>
+                <a href="tel:+79253647813" type="text/html">+7 (925) 364-78-13</a>
               </li>
             </ul>
           </details>

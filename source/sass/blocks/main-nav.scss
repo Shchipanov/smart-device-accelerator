@@ -18,13 +18,23 @@
 }
 
 .main-nav__logo {
-  display: block;
-  width: 215px;
-  height: 55px;
 
   @include vp-767 {
     width: 35px;
     height: 35px;
+  }
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:active {
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:focus {
+    background-color: $color-deep-sky-blue;
+    outline: none;
   }
 }
 
@@ -72,6 +82,20 @@
     font-size: 0;
     gap: 0;
     padding: 10px;
+  }
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+  }
+
+  &:active {
+    background-color: $color-deep-sky-blue;
+    color: $color-black-pearl;
+  }
+
+  &:focus {
+    background-color: $color-deep-sky-blue;
+    outline: none;
   }
 }
 

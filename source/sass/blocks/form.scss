@@ -135,15 +135,17 @@
 
   &:hover {
     background-color: $color-deep-sky-blue;
+    border: 1px solid $color-black-pearl;
   }
 
   &:active {
     background-color: $color-deep-sky-blue;
+    border: 1px solid $color-black-pearl;
   }
 
   &:focus-visible {
     background-color: $color-deep-sky-blue;
-    outline: none;
+    outline: 1px solid $color-black-pearl;
   }
 }
 
@@ -180,15 +182,17 @@
 
   &:hover {
     background-color: $color-deep-sky-blue;
+    border: 1px solid $color-black-pearl;
   }
 
   &:active {
     background-color: $color-deep-sky-blue;
+    border: 1px solid $color-black-pearl;
   }
 
   &:focus-visible {
     background-color: $color-deep-sky-blue;
-    outline: none;
+    outline: 1px solid $color-black-pearl;
   }
 }
 
@@ -238,16 +242,18 @@
 
   &:hover {
     background-color: transparent;
+    border: 1px solid $color-black-pearl;
   }
 
   &:active {
     background-color: $color-tints-shalimar;
     color: $color-black-pearl;
+    border: 1px solid $color-black-pearl;
   }
 
   &:focus {
     background-color: transparent;
-    outline: none;
+    outline: 1px solid $color-black-pearl;
   }
 }
 
@@ -296,7 +302,8 @@
   }
 }
 
-.form__checkbox-input[type="checkbox"]:checked:active + .form__control-mark::before {
+.form__checkbox-input[type="checkbox"]:checked:active
+  + .form__control-mark::before {
   background-color: $color-silver;
 }
 
