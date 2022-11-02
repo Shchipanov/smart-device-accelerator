@@ -29,7 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

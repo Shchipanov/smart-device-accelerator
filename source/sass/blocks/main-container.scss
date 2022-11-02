@@ -1,13 +1,3 @@
-.main-container__background {
-  background: linear-gradient(
-    180deg,
-    rgba(25, 32, 36, 0.7) 71.72%,
-    rgba(25, 32, 36, 0) 100%
-  );
-  width: 100%;
-  height: 100%;
-}
-
 .main-container__block {
   position: relative;
   background-color: $color-silver;
@@ -15,6 +5,7 @@
   background-image: url("../img/background/main-container-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 0;
 
   @media (min-width: $vp-1024) {
     @include retina {
@@ -37,6 +28,21 @@
       background-image: url("../img/background/main-container-image-mobile@2x.jpg");
     }
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(
+    180deg,
+    rgba(25, 32, 36, 0.7) 71.72%,
+    rgba(25, 32, 36, 0) 100%
+  );
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 .main-container__wrapper {
@@ -45,6 +51,7 @@
   margin-left: 10%;
   padding-bottom: 23%;
   vertical-align: middle;
+  z-index: 1;
 
   @include vp-1023 {
     margin-left: 0;

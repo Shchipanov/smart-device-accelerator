@@ -643,6 +643,7 @@ button,
 .btn {
   display: inline-block;
   padding: 10px 20px;
+  vertical-align: middle;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -1076,15 +1077,15 @@ button,
 }
 
 .main-nav__logo:hover {
-  background-color: #00b2ff;
+  opacity: 0.5;
 }
 
 .main-nav__logo:active {
-  background-color: #00b2ff;
+  opacity: 0.5;
 }
 
 .main-nav__logo:focus {
-  background-color: #00b2ff;
+  opacity: 0.5;
   outline: none;
 }
 
@@ -1137,7 +1138,12 @@ button,
 }
 
 .main-nav__link svg {
-  background-color: #041827;
+  fill: #00b2ff;
+}
+
+.main-nav__link:hover svg,
+.main-nav__link:focus svg {
+  fill: currentColor;
 }
 
 .main-nav__btn {
@@ -1159,14 +1165,6 @@ button,
   outline: none;
 }
 
-.main-container__background {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
-  width: 100%;
-  height: 100%;
-}
-
 .main-container__block {
   position: relative;
   background-color: #c4c4c4;
@@ -1174,6 +1172,20 @@ button,
   background-image: url("../img/background/main-container-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 0;
+}
+
+.main-container__block::after {
+  position: absolute;
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .main-container__wrapper {
@@ -1182,6 +1194,7 @@ button,
   margin-left: 10%;
   padding-bottom: 23%;
   vertical-align: middle;
+  z-index: 1;
 }
 
 .main-container__wrapper h2 {
@@ -1253,15 +1266,15 @@ button,
 }
 
 .main-footer__logo:hover {
-  background-color: #00b2ff;
+  opacity: 0.5;
 }
 
 .main-footer__logo:active {
-  background-color: #00b2ff;
+  opacity: 0.5;
 }
 
 .main-footer__logo:focus {
-  background-color: #00b2ff;
+  opacity: 0.5;
   outline: none;
 }
 
@@ -1344,6 +1357,7 @@ button,
 
 .link__container summary {
   display: inline-block;
+  vertical-align: middle;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 400;
@@ -2230,8 +2244,8 @@ button,
     background-image: url("../img/background/product-image-3-tablet.jpg");
   }
 
-  .product__item-2 h3 {
-    width: 145px;
+  .product__item h3 {
+    max-width: 150px;
   }
 
   .form::before {
@@ -2381,7 +2395,6 @@ button,
   }
 
   .main-footer__top {
-    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2394,21 +2407,21 @@ button,
     padding-bottom: 26px;
   }
 
-  .main-footer__top::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -272px;
-    right: -272px;
-    height: 1px;
-    background-color: rgba(248, 253, 255, 0.7);
-  }
-
   .main-footer__scroll {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    position: relative;
+  }
+
+  .main-footer__scroll::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    right: -25px;
+    height: 1px;
+    background-color: rgba(248, 253, 255, 0.7);
   }
 
   .social {
@@ -2594,11 +2607,7 @@ button,
   .product__item h3 {
     font-size: 18px;
     line-height: 30px;
-    max-width: 155px;
-  }
-
-  .product__item-2 h3 {
-    width: 130px;
+    max-width: 135px;
   }
 
   .form__container {

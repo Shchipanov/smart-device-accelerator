@@ -25,15 +25,15 @@
   }
 
   &:hover {
-    background-color: $color-deep-sky-blue;
+    opacity: 0.5;
   }
 
   &:active {
-    background-color: $color-deep-sky-blue;
+    opacity: 0.5;
   }
 
   &:focus {
-    background-color: $color-deep-sky-blue;
+    opacity: 0.5;
     outline: none;
   }
 }
@@ -100,7 +100,12 @@
 }
 
 .main-nav__link svg {
-  background-color: $color-black-pearl;
+  fill: $color-deep-sky-blue;
+}
+
+.main-nav__link:hover svg,
+.main-nav__link:focus svg {
+  fill: currentColor;
 }
 
 .main-nav__btn {

@@ -1,8 +1,7 @@
-const elementOpen = document.querySelectorAll('[data-link] > details[open]');
-const elementClose = document.querySelectorAll('[data-link] > details');
+const elementOpen = document.querySelectorAll('[data-details][open]');
+const elementClose = document.querySelectorAll('[data-details]');
 
 function accordion() {
-
   function onToggle(event) {
     if (!elementOpen) {
       // eslint-disable-next-line no-alert
