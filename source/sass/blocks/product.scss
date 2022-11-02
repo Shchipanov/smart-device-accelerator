@@ -178,9 +178,6 @@
 
 .product__item-2 {
   background-image: url("../img/background/product-image-2.jpg");
-  background-color: $color-silver;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @media (min-width: $vp-1024) {
     @include retina {
@@ -207,9 +204,6 @@
 
 .product__item-3 {
   background-image: url("../img/background/product-image-3.jpg");
-  background-color: $color-silver;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @media (min-width: $vp-1024) {
     @include retina {
