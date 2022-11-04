@@ -152,19 +152,19 @@
                   <input type="text" name="autofocus" placeholder="Имя" id="name" required>
                 </label>
                 <label for="phone">
-                  <input type="tel" id="phone" name="yourself-phone" placeholder="Телефон" data-phone required>
+                  <input type="tel" id="phone" name="yourself-phone" placeholder="Телефон" data-phone minlength="10" pattern="[\+]\d{1}[\s][\(]\d{3}[\)][\s]\d{3}[\s]\d{4}" required>
                 </label>
               </div>
               <label>
                 <textarea name="yourself-question" cols="60" rows="7" placeholder="Ваш вопрос"></textarea>
               </label>
               <div class="form__question">
+                <label class="form__checkbox" for="agreement">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" id="agreement" name="agreement" required>
+                  <span class="form__control-mark"></span>
+                  <span class="form__control-span">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                </label>
                 <button class="btn form__btn" type="submit">Задать вопрос</button>
-                  <label class="form__checkbox" for="agreement">
-                    <input class="visually-hidden form__checkbox-input" type="checkbox" id="agreement" name="agreement" required>
-                    <span class="form__control-mark"></span>
-                    <span class="form__control-span">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-                  </label>
               </div>
             </div>
           </form>
@@ -272,19 +272,19 @@
                 <input type="text" name="yourself-name" placeholder="Имя" id="your-name" data-focus required>
               </label>
               <label for="your-phone">
-                <input type="tel" id="your-phone" name="yourself-phone" data-phone placeholder="Телефон" required>
+                <input type="tel" id="your-phone" name="yourself-phone" data-phone placeholder="Телефон" minlength="10" pattern="[\+]\d{1}[\s][\(]\d{3}[\)][\s]\d{3}[\s]\d{4}" required>
               </label>
             </div>
             <label>
               <textarea name="yourself-question" cols="60" rows="7" placeholder="Ваш вопрос"></textarea>
             </label>
             <div class="modal__question">
-              <button class="btn modal__btn" type="submit">отправить</button>
               <label class="modal__checkbox" for="your-agreement">
                 <input class="visually-hidden modal__checkbox-input" type="checkbox" id="your-agreement" name="agreement" required>
                 <span class="modal__control-mark"></span>
                 <span class="modal__control-span">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
               </label>
+              <button class="btn modal__btn" type="submit">отправить</button>
             </div>
           </div>
         </form>
