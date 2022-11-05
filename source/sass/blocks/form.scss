@@ -309,8 +309,7 @@
   }
 }
 
-.form__checkbox-input[type="checkbox"]:checked:active
-  + .form__control-mark::before {
+.form__checkbox-input[type="checkbox"]:checked:active + .form__control-mark::before {
   background-color: $color-silver;
 }
 
